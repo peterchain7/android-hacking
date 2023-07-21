@@ -41,7 +41,7 @@
 -  `*#67#` Check Call Forwarding
 -  `*57` Activate call tracing service
 
-# Below codes not yet tested
+- [x] Below codes not yet tested
 - `*#*#1472365#*#*` GPS System check (strength and efficiency)
 - `*#*#2664#*#*` Touch screen Test
 - `#*#232339#*#*` Test Wi-Fi
