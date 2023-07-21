@@ -1,5 +1,57 @@
 # android-hacking
 
+
+
+# ANDROID TECHNOLOGY
+
+## TERMINOLOGY
+
+- USSD
+```bash
+# Unstructured Supplementary Service Data)
+- Used by GSM,smartphones... Used to communicate with mobile operator network
+- Hep to access some phone features
+```
+
+- MMI code
+```bash
+# Man-Machine Interface code,
+- A string of numbers or letters that instructs your device to carry out certain tasks
+```
+
+- GSM 
+```bash
+# Global System for Mobile Communications)
+```
+
+- IMEI
+```bash
+# International Mobile Equipment Identity
+```
+
+# USSD codes
+
+- [USSD codes](https://www.maketecheasier.com/android-ussd-secret-security-codes/)
+- `*#06#` Used to Get IMEI number of your device 
+- `*#07#` Check SAR level # Specific absorption rate (`1.6W/kg`)
+- `*#*#225#*#*` Display calenda storage data
+- `*#*#4636#*#*` View Smartphone Battery, WLAN, and Other Inf
+- `*31#` Turn Off Caller ID-- Enable/disable outgoing caller ID
+- `*43#` Enable call waiting service. `#43#` To disable
+-  `*#67#` Check Call Forwarding
+-  `*57` Activate call tracing service
+
+# Below codes not yet tested
+- `*#*#1472365#*#*` GPS System check (strength and efficiency)
+- `*#*#2664#*#*` Touch screen Test
+- `#*#232339#*#*` Test Wi-Fi
+- `*#*#197328640#*#*` Enable service mode
+- `*#*#4986*2650468#*#*` View firmware Information
+- ` *#*#34971539#*#*` View Camera Information
+-  `*#3282*727336*#` Check Storage and System Details
+
+
+
 ## Using malicios APK file
 
 1. Getting public ip with ngrok
