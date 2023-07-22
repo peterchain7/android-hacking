@@ -40,6 +40,8 @@
 - `*43#` Enable call waiting service. `#43#` To disable
 -  `*#67#` Check Call Forwarding
 -  `*57` Activate call tracing service
+-  `**21*NUMBER#` Call forward code
+-  `##002#` Call forward erasal code
 
 - [x] Below codes not yet tested
 - `*#*#1472365#*#*` GPS System check (strength and efficiency)
