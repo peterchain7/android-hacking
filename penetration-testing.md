@@ -146,7 +146,6 @@ python -m pip install Frida-tools
 - [-] adb shell pm path com.example.myapp # Getting the full path of apk file
 
 
-package:com.wnapp.id1697966218718
 ###### Open Source Frameworks
 ```bash
 - [x] Drozer is an Android security testing framework that allows security researchers to find vulnerabilities and potential exploits in Android applications.
