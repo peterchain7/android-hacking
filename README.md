@@ -7,6 +7,7 @@
 ## TERMINOLOGY
 
 - USSD
+
 ```bash
 # Unstructured Supplementary Service Data)
 - Used by GSM,smartphones... Used to communicate with mobile operator network
@@ -73,6 +74,7 @@
       `Now we need to send the apk to the victim and getting them to install and launch`
       
  #### Disadvantages of this method
+ 
   1. Requires either access to the victim’s phone or social engineering to get the victim to install and launch the malicious apk.
   2. The generated apk file does not look legitimate. It’s only a few KBs and doesn’t do anything when clicked on. The victim might either uninstall it right away or not install it at all.
   3. Might require a lot of time and effort to make the apk file look realistic i.e. changing the logo, adding some functionality.
