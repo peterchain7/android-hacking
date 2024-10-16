@@ -10,6 +10,7 @@ This method has a weakness, however: An attacker can generate a self-signed cert
 ```
 
 - So how burp cert comes into effect?
+
 ```bash
 As a result,if you try and access an HTTPS URL while Burp is running, your browser/app will detect that it is not communicating directly with the authentic web server and will show a security warning. To prevent this issue, Burp generates its own TLS certificate for each host, signed by its own Certificate Authority (CA) and saved as trusted Certificate in a specific Browser or Android device. (It works perfect when devices is not SSL pinned)
 ```
@@ -50,39 +51,39 @@ g. adb reboot
 
 #### Intercepting `apk` traffic
 
--  The above methods will work only when intercepting android device browser traffic, it may be no for apk traffics.
-
+- The above methods will work only when intercepting android device browser traffic, it may be no for apk traffics.
 
 #### Important directories
+
 ```bash
-	- The directories listed below are the most important directories in an Android device and are worth being aware of.
+ - The directories listed below are the most important directories in an Android device and are worth being aware of.
 
-	- /data/data: Contains all the applications that are installed by the user.
+ - /data/data: Contains all the applications that are installed by the user.
 
-	- /data/user/0: Contains data that only the app can access.
+ - /data/user/0: Contains data that only the app can access.
 
-	- /data/app: Contains the APKs of the applications that are installed by the user.
+ - /data/app: Contains the APKs of the applications that are installed by the user.
 
-	- /system/app: Contains the pre-installed applications of the device.
+ - /system/app: Contains the pre-installed applications of the device.
 
-	- /system/bin: Contains binary files.
+ - /system/bin: Contains binary files.
 
-	- /data/local/tmp: A world-writable directory.
+ - /data/local/tmp: A world-writable directory.
 
-	- /data/system: Contains system configuration files.
+ - /data/system: Contains system configuration files.
 
-	- /etc/apns-conf.xml: Contains the default Access Point Name (APN) configurations. APN is used in order for the device to connect with our current carrier’s network.
+ - /etc/apns-conf.xml: Contains the default Access Point Name (APN) configurations. APN is used in order for the device to connect with our current carrier’s network.
 
-	- /data/misc/wifi: Contains WiFi configuration files.
+ - /data/misc/wifi: Contains WiFi configuration files.
 
-	- /data/misc/user/0/cacerts-added: User certificate store. It contains certificates added by the user.
+ - /data/misc/user/0/cacerts-added: User certificate store. It contains certificates added by the user.
 
-	- /etc/security/cacerts/: System certificate store. Permission to non-root users is not permitted.
+ - /etc/security/cacerts/: System certificate store. Permission to non-root users is not permitted.
 
-	- /sdcard: Contains a symbolic link to the directories DCIM, Downloads, Music, Pictures, etc.
+ - /sdcard: Contains a symbolic link to the directories DCIM, Downloads, Music, Pictures, etc.
 ```
 
-#### Using frida in windows OS 
+#### Using frida in windows OS
 
 - Frida
 
@@ -100,10 +101,10 @@ adb push cacert.der /data/local/tmp/cert-der.crt
 ```
 
 - Running
+
 ```bash
 frida --codeshare pcipolloni/universal-android-ssl-pinning-bypass-with-frida -f
 ```
-
 
 #### Tools installation in window
 
@@ -116,7 +117,7 @@ python -m pip install Frida-tools
 
 ##### ADB - download platforms tools
 
-######  adb commands
+###### adb commands
 
 - [-] adb devices: Lists all connected Android devices and their status.
 - [-] adb shell: Opens a shell on the Android device, allowing the user to execute commands directly on the device.
@@ -145,8 +146,8 @@ python -m pip install Frida-tools
 - [-] adb shell input text [text]: Simulates typing text on the Android device’s keyboard.
 - [-] adb shell pm path com.example.myapp # Getting the full path of apk file
 
-
 ###### Open Source Frameworks
+
 ```bash
 - [x] Drozer is an Android security testing framework that allows security researchers to find vulnerabilities and potential exploits in Android applications.
 
